@@ -1,25 +1,70 @@
-title{
-
-}
-
-.principal{
-
-}
-
-.menu_lateral{
-
-}
-
-.detalles{
-
-}
-
-.creado{
-
-}
-
-body{
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
+    display: flex; /* menú lateral + contenedor derecho */
+    background-color: antiquewhite;
 }
+
+/* Menú lateral */
+.menu_lateral {
+    width: 15%;
+    background-color: #a1ebe7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu_lateral ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu_lateral li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.menu_lateral a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contenedor derecho */
+.contenedor {
+    flex: 1; /* ocupa el 85% restante */
+    display: flex; /* tres columnas dentro */
+    flex-direction: column;
+    justify-content: center; /* centra columnas horizontalmente */
+    align-items: center; /* centra columnas verticalmente */
+    text-align: center;
+}
+
+
+/* Columna izquierda */
+.col-izq {
+    background-color: lightblue;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+}
+
+/* Columna central */
+.col-central {
+    background-color: lightgreen;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+}
+
+/* Columna derecha */
+.col-der {
+    background-color: lightyellow;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
