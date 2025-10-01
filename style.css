@@ -33,18 +33,15 @@ body {
     text-align: center;
 }
 
-/* Contenedor derecho */
 .contenedor {
-    flex: 1; /* ocupa el 85% restante */
-    display: flex; /* tres columnas dentro */
+    flex: 1; 
+    display: flex; 
     flex-direction: column;
-    justify-content: center; /* centra columnas horizontalmente */
-    align-items: center; /* centra columnas verticalmente */
+    justify-content: center; 
+    align-items: center;
     text-align: center;
 }
 
-
-/* Columna izquierda */
 .col-izq {
     background-color: lightblue;
     text-align: center;
@@ -52,7 +49,6 @@ body {
     height: 30%;
 }
 
-/* Columna central */
 .col-central {
     background-color: lightgreen;
     text-align: center;
@@ -60,7 +56,6 @@ body {
     flex: 1;
 }
 
-/* Columna derecha */
 .col-der {
     background-color: lightyellow;
     text-align: center;
